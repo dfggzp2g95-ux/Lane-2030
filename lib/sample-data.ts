@@ -1,16 +1,65 @@
 import type { AppData } from './types';
 
 export const sampleData: AppData = {
-  profile: {
-    name: 'Tristan',
-    graduationYear: 2030,
-    school: 'Riverside High School',
-    club: 'Northshore Aquatic Club',
-  },
-  times: [],
-  practices: [],
-  meets: [],
-  goals: [],
-  milestones: [],
+ 
+   profile: {
+  name: 'Tristan',
+  graduationYear: 2030,
+  school: 'Fulshear High School',
+  club: 'FRST',
+  coach: 'Coach Adam',
+  favoriteEvents: [
+    '200 IM',
+    '200 Free',
+    '100 Free',
+    '100 Back',
+    '50 Free',
+  ],
+  collegeGoal: 'NCAA Division I',
+},
+
+  milestones: [
+    {
+      id: 'milestone-1',
+      title: 'Build official time history',
+      description: 'Enter official meet results for your main events.',
+      targetDate: '2026-09-01',
+      status: 'In Progress',
+      category: 'High School Season',
+    },
+    {
+      id: 'milestone-2',
+      title: 'Complete freshman swim season',
+      description: 'Track practices, meets, goals, and time improvements.',
+      targetDate: '2027-03-31',
+      status: 'Upcoming',
+      category: 'High School Season',
+    },
+    {
+      id: 'milestone-3',
+      title: 'Begin college research',
+      description: 'Start building a list of possible Division I programs.',
+      targetDate: '2028-06-01',
+      status: 'Upcoming',
+      category: 'College Visit',
+    },
+    {
+      id: 'milestone-4',
+      title: 'Begin coach contact preparation',
+      description: 'Prepare race history, academic information, and introduction emails.',
+      targetDate: '2028-09-01',
+      status: 'Upcoming',
+      category: 'Recruiting Deadline',
+    },
+    {
+      id: 'milestone-5',
+      title: 'Graduate',
+      description: 'Graduate from Fulshear High School.',
+      targetDate: '2030-05-31',
+      status: 'Upcoming',
+      category: 'Graduation',
+    },
+  ],
+
   colleges: [],
 };
