@@ -1,33 +1,11 @@
 'use client';
 
-import { AthleteProfile } from '@/features/dashboard/athlete-profile';
 import { useData } from '@/components/data-provider';
 import { PageHeader } from '@/components/shared/page-header';
 import { StatCard } from '@/components/shared/stat-card';
 import { AnimatedCard } from '@/components/shared/animated-card';
-<WelcomeCard />
-
-<div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-  <div className="lg:col-span-2">
-    <AthleteProfile />
-  </div>
-
-  <AnimatedCard className="p-5">
-    <p className="text-sm text-muted-foreground">
-      Recruiting target
-    </p>
-
-    <p className="mt-2 text-2xl font-bold">
-      NCAA Division I
-    </p>
-
-    <p className="mt-2 text-sm text-muted-foreground">
-      Track your times, grades, meets, and coach contacts through 2030.
-    </p>
-  </AnimatedCard>
-</div>
-
-<div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+import { WelcomeCard } from '@/features/dashboard/welcome-card';
+import { AthleteProfile } from '@/features/dashboard/athlete-profile';
 import { QuickActions } from '@/features/dashboard/quick-actions';
 import { TodaySummary } from '@/features/dashboard/today-summary';
 import { LatestBests } from '@/features/dashboard/latest-bests';
@@ -52,6 +30,8 @@ export default function DashboardPage() {
       />
 
       <WelcomeCard />
+
+      <AthleteProfile />
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard

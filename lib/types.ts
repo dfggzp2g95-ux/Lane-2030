@@ -107,6 +107,9 @@ export interface AthleteProfile {
   graduationYear: number;
   school: string;
   club: string;
+  coach: string;
+  favoriteEvents: string[];
+  collegeGoal: string;
 }
 
 export interface AppData {

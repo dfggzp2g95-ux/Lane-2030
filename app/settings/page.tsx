@@ -133,7 +133,15 @@ export default function SettingsPage() {
             <div className="flex gap-2">
               <Button variant="destructive" className="flex-1" onClick={() => {
                 replaceData({
-                  profile: { name: 'Tristan', graduationYear: 2030, school: 'Riverside High School', club: 'Northshore Aquatic Club' },
+                  profile: {
+                    name: 'Tristan',
+                    graduationYear: 2030,
+                    school: 'Fulshear High School',
+                    club: 'FRST',
+                    coach: 'Coach Adam',
+                    favoriteEvents: ['200 IM', '200 Free', '100 Free', '100 Back', '50 Free'],
+                    collegeGoal: 'NCAA Division I',
+                  },
                   times: [], practices: [], meets: [], goals: [], milestones: [], colleges: [],
                 });
                 setConfirmClear(false);

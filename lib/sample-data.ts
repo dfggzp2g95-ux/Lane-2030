@@ -1,23 +1,25 @@
 import type { AppData } from './types';
 
 export const sampleData: AppData = {
- 
-   profile: {
-  name: 'Tristan',
-  graduationYear: 2030,
-  school: 'Fulshear High School',
-  club: 'FRST',
-  coach: 'Coach Adam',
-  favoriteEvents: [
-    '200 IM',
-    '200 Free',
-    '100 Free',
-    '100 Back',
-    '50 Free',
-  ],
-  collegeGoal: 'NCAA Division I',
-},
-
+  profile: {
+    name: 'Tristan',
+    graduationYear: 2030,
+    school: 'Fulshear High School',
+    club: 'FRST',
+    coach: 'Coach Adam',
+    favoriteEvents: [
+      '200 IM',
+      '200 Free',
+      '100 Free',
+      '100 Back',
+      '50 Free',
+    ],
+    collegeGoal: 'NCAA Division I',
+  },
+  times: [],
+  practices: [],
+  meets: [],
+  goals: [],
   milestones: [
     {
       id: 'milestone-1',
@@ -60,6 +62,5 @@ export const sampleData: AppData = {
       category: 'Graduation',
     },
   ],
-
   colleges: [],
 };
