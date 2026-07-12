@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 49% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 49% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 49% 14%;
+    --primary: 217 75% 23%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 217 75% 23%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 173 58% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 75% 23%;
+    --chart-1: 217 75% 23%;
+    --chart-2: 173 58% 40%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 142 71% 45%;
+    --chart-5: 38 92% 50%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 215 50% 8%;
+    --foreground: 210 40% 98%;
+    --card: 215 45% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 45% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 35% 18%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 35% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 173 58% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 30% 22%;
+    --input: 215 30% 22%;
+    --ring: 217 83% 58%;
+    --chart-1: 217 83% 58%;
+    --chart-2: 173 58% 50%;
+    --chart-3: 199 89% 58%;
+    --chart-4: 142 71% 55%;
+    --chart-5: 38 92% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/60;
+  }
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(217 75% 23%) 0%, hsl(217 83% 35%) 50%, hsl(199 89% 48%) 100%);
+  }
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(173 58% 40%) 0%, hsl(199 89% 48%) 100%);
+  }
+  .gradient-navy {
+    background: linear-gradient(180deg, hsl(215 50% 8%) 0%, hsl(215 55% 5%) 100%);
+  }
+}

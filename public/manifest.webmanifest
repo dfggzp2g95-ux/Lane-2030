@@ -1,0 +1,25 @@
+{
+  "name": "Lane 2030",
+  "short_name": "Lane 2030",
+  "description": "Track every aspect of competitive swimming training, meets, goals, and college recruiting from freshman year to graduation in 2030.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B1F3A",
+  "theme_color": "#0B1F3A",
+  "categories": ["sports", "health", "productivity"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
