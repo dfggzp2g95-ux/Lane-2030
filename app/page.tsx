@@ -1,4 +1,5 @@
 'use client';
+
 import { AthleteProfile } from '@/features/dashboard/athlete-profile';
 import { useData } from '@/components/data-provider';
 import { PageHeader } from '@/components/shared/page-header';
